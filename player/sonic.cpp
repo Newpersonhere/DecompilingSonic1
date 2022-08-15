@@ -18,7 +18,7 @@ void SonicPlayer(Object* self)
 			self->priority = 2;
 			self->actWid = 24;
 			Obj_SetLayerNormal(self);
-			v_sonspeedmax = 0xC00;
+			v_sonspeedmax = 0x100;
 			v_sonspeedacc = 0x1C;
 			v_sonspeeddec = 0x80;
 			// fall through
@@ -149,10 +149,10 @@ void GameOver(Object* self)
 		self->velY = -0x38;
 		self->routine = PlayerRoutine_LevelReset;
 		f_timecount = false;
-		f_lifecount = true;
+		f_lifecount = false;
 		v_lives--;
 
-		if(v_lives == 0)
+		if(v_lives == 999)
 		{
 			VAR_W(self, Player_DeathResetTimerW) = 0;
 			v_objspace[2].id = ID_GameOverCard;
