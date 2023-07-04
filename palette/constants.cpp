@@ -12,11 +12,11 @@ enum
 	Palette_SBZ1,       // 0x09
 	Palette_Special,    // 0x0A
 	Palette_LZWater,    // 0x0B
-	Palette_SBZ3,       // 0x0C
-	Palette_SBZ3Water,  // 0x0D
+	Palette_LZ,       // 0x0C
+	Palette_LZWater,  // 0x0D
 	Palette_SBZ2,       // 0x0E
 	Palette_LZSonWater, // 0x0F
-	Palette_SBZ3SonWat, // 0x10
+	Palette_LZSonWat, // 0x10
 	Palette_SSResult,   // 0x11
 	Palette_Continue,   // 0x12
 	Palette_Ending,     // 0x13
@@ -48,11 +48,11 @@ const PalPointer PalPointers[] =
 	{ Pal_SBZ1,       0xFB20, 0x30 }, // 0x09 - SBZ1
 	{ Pal_Special,    0xFB00, 0x40 }, // 0x0A (10) - special stage
 	{ Pal_LZWater,    0xFB00, 0x40 }, // 0x0B (11) - LZ underwater
-	{ Pal_SBZ3,       0xFB20, 0x30 }, // 0x0C (12) - SBZ3
-	{ Pal_SBZ3Water,  0xFB00, 0x40 }, // 0x0D (13) - SBZ3 underwater
+	{ Pal_LZ,       0xFB20, 0x30 }, // 0x0C (12) - LZ4
+	{ Pal_LZWater,  0xFB00, 0x40 }, // 0x0D (13) - LZ underwater
 	{ Pal_SBZ2,       0xFB20, 0x30 }, // 0x0E (14) - SBZ2
 	{ Pal_LZSonWater, 0xFB00, 0x10 }, // 0x0F (15) - LZ Sonic underwater
-	{ Pal_SBZ3SonWat, 0xFB00, 0x10 }, // 0x10 (16) - SBZ3 Sonic underwater
+	{ Pal_LZSonWat, 0xFB00, 0x10 }, // 0x10 (16) - LZ Sonic underwater
 	{ Pal_SSResult,   0xFB00, 0x40 }, // 0x11 (17) - special stage results
 	{ Pal_Continue,   0xFB00, 0x20 }, // 0x12 (18) - special stage results continue
 	{ Pal_Ending,     0xFB00, 0x40 }, // 0x13 (19) - ending sequence
