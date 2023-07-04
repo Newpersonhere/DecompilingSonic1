@@ -15,7 +15,7 @@ void Sonic_Display(Object* self)
 		if(!f_lockscreen && v_air >= 12)
 		{
 			if(v_zone == Zone_LZ && v_act == Act_4)
-				PlaySound(BGM_SBZ);
+				PlaySound(BGM_LZ);
 			else
 				PlaySound(MusicList2[v_zone]);
 		}
