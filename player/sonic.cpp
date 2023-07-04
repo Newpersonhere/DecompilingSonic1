@@ -263,7 +263,7 @@ void Sonic_Water(Object* self)
 
 			v_objspace[13].id = ID_DrownCount;
 			v_objspace[13].subtype = 0x81; // master
-			v_sonspeedmax = 0x300;
+			v_sonspeedmax = 0x600;
 			v_sonspeedacc = 6;
 			v_sonspeeddec = 0x40;
 			self->velX /= 2;
