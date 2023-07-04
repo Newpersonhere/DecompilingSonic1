@@ -110,7 +110,7 @@ void Signpost(Object* self)
 			{
 				if(!Player_IsInAir())
 				{
-					f_lockctrl = true;
+					f_lockctrl = false;
 					v_jpadhold2 = Buttons_R;
 				}
 
