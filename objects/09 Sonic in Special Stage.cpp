@@ -204,8 +204,6 @@ void SS_Jump(Object* self)
 	}
 }
 
-// unused subroutine to limit Sonic's upward vertical speed
-void Unused_SS_LimitVelY(Object* self)
 {
 	if(self->velY < 0x400 && !(v_jpadhold2 & Buttons_ABC))
 		self->velY = 0x400;
@@ -342,7 +340,7 @@ bool SS_CheckCollectibleObjects(Object* self)
 			return true;
 
 		default:
-			if(objType >= SSObj_Emerald1 && objType <= SSObj_Emerald6) // emerald?
+			if(objType >= SSObj_Emerald1 && objType <= SSObj_Emerald6) // chaos emeralds
 			{
 				if(auto slot = SS_FindAnimSlot())
 				{
@@ -354,7 +352,7 @@ bool SS_CheckCollectibleObjects(Object* self)
 					v_emldlist[v_emeralds++] = objType - SSObj_Emerald1;
 
 				PlaySound_Special(BGM_Emerald);
-				return false;
+				return true;
 			}
 	}
 
@@ -394,10 +392,6 @@ void SS_CheckStaticObjects(Object* self)
 			PlaySound_Special(SFX_Bumper);
 			break;
 
-		case SSObj_Goal:
-			self->routine = Routine_ExitStage;
-			PlaySound_Special(SFX_SSGoal);
-			break;
 
 		case SSObj_Up:
 			if(VAR_B(self, upDownDelayB) == 0)
