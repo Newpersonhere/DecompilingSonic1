@@ -22,10 +22,10 @@ void HUD_Update()
 	{
 		if(v_timemin == 9 && v_timesec == 59 && v_timecent == 59)
 		{
-			// Time over
-			f_timecount = false;
-			Player_Kill(v_player, v_player);
-			f_timeover = true;
+			// Time restarts
+			f_timecount = true;
+			
+		 f_timeover = false;
 			return;
 		}
 
