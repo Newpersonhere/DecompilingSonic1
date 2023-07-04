@@ -236,7 +236,7 @@ void GM_Title()
 	v_time = 0;
 	v_score = 0;
 	v_lastspecial = 0;
-	v_emeralds = 0;
+	v_emeralds = 6;
 	Clear_Emerald_List();
 	v_continues = 0;
 
