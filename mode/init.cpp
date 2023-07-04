@@ -45,15 +45,15 @@ void EntryPoint()
 		VDP_RegWrite(0x03, (0xF000>>10)); // window nametable address
 		VDP_RegWrite(0x04, (0xE000>>13)); // background nametable address
 		VDP_RegWrite(0x05, (0xD800>>9));  // sprite table address
-		VDP_RegWrite(0x06, 0);            // unused
+		VDP_RegWrite(0x06, 0);            // 
 		VDP_RegWrite(0x07, 0);            // background colour
-		VDP_RegWrite(0x08, 0);            // unused
-		VDP_RegWrite(0x09, 0);            // unused
+		VDP_RegWrite(0x08, 0);            // 
+		VDP_RegWrite(0x09, 0);            // 
 		VDP_RegWrite(0x0A, 255);          // HBlank register
 		VDP_RegWrite(0x0B, 0);            // full screen scroll
 		VDP_RegWrite(0x0C, 0x81);         // 40 cell display
 		VDP_RegWrite(0x0D, (0xDC00>>10)); // hscroll table address
-		VDP_RegWrite(0x0E, 0);            // unused
+		VDP_RegWrite(0x0E, 0);            // 
 		VDP_RegWrite(0x0F, 1);            // VDP increment
 		VDP_RegWrite(0x10, 1);            // 64 cell hscroll size
 		VDP_RegWrite(0x11, 0);            // window h position
