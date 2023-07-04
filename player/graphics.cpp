@@ -25,7 +25,7 @@ void Sonic_Display(Object* self)
 
 	if(v_shoes && VAR_W(self, Player_ShoeTimeW) != 0 && DecToZero(VAR_W(self, Player_ShoeTimeW)))
 	{
-		v_sonspeedmax = 0x600;
+		v_sonspeedmax = 0x800;
 		v_sonspeedacc = 0xC;
 		v_sonspeeddec = 0x80;
 		v_shoes = false;
